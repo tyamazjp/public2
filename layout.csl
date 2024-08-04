@@ -1,0 +1,35 @@
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Nichigan style</title>
+    <id>http://www.citationstyles.org/unnamed-style-01</id>
+    <link href="http://www.citationstyles.org/unnamed-style-01" rel="self"/>
+    <author>
+      <name>Your Name</name>
+      <email>your-email@example.com</email>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="medicine"/>
+    <updated>2024-01-01T00:00:00+00:00</updated>
+  </info>
+  <citation>
+    <layout prefix="[" suffix="]">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography>
+    <layout>
+      <names variable="author">
+        <name and="text" delimiter=", " initialize-with="." />
+        <label form="short" prefix=" [" suffix="]" />
+        <et-al term="et-al" font-style="normal" prefix=", 他" suffix="." />
+      </names>
+      <text variable="title" suffix=". " />
+      <text variable="container-title" form="short" suffix=" " />
+      <group delimiter=": ">
+        <text variable="volume" suffix=" " />
+        <text variable="page" prefix=": " />
+      </group>
+      <date variable="issued" prefix=", " suffix="." />
+    </layout>
+  </bibliography>
+</style>
